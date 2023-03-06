@@ -14,7 +14,8 @@ Library             RPA.Browser.Selenium
 *** Keywords ***
 MAIN FLOW
     create_csv
-    ${File}     Set Variable    C:/Users/Q0041/Documents/Robots/RoboCorp/SBL_Easy_TestCase/Config/config.xlsx
+    ${configpath}    Data.current_diectory    
+    ${File}   Set Variable   ${configpath}/Config/config.xlsx
     Wait Until Keyword Succeeds    15x   2s   Open Available Browser           https://www.snwm.org/roll-search
     Wait Until Keyword Succeeds    15x   2s   Maximize Browser Window
     Sleep    2s
