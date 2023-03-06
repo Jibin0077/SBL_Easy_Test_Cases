@@ -1,0 +1,34 @@
+==============================================================================
+Tasks :: Template robot main suite.                                           
+==============================================================================
+SAMPLE Tasks                                                          TC_01
+August
+1915
+FAIL
+TC_02
+June
+1916
+FAIL
+TC_03
+September
+1915
+FAIL
+TC_04
+October
+1914
+PASS
+TC_05
+November
+1914
+PASS
+TC_06
+July
+1916
+FAIL
+| PASS |
+------------------------------------------------------------------------------
+Tasks :: Template robot main suite.                                   | PASS |
+1 task, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Q0041\Documents\Robots\RoboCorp\SBL_Easy_TestCase\output\output.xml
+Log:     C:\Users\Q0041\Documents\Robots\RoboCorp\SBL_Easy_TestCase\output\log.html

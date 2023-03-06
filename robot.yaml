@@ -1,0 +1,27 @@
+tasks:
+  Example task:
+    robotTaskName: Example task
+  Rollsearch:
+    robotTaskName: Rollsearch
+  Run Task:
+    robotTaskName: Run Task
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log"
+      tasks.robot
+  Batch_1:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log"
+      Task1.robot
+  Batch_2_testCases:
+  # 'shell': You have to quote items in the command with spaces using "
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" Tasks.robot
+
+condaConfigFile: conda.yaml
+ignoreFiles:
+- .gitignore
+artifactsDir: output
+PATH:
+- .
+PYTHONPATH:
+- keywords
+- resources
+- libraries

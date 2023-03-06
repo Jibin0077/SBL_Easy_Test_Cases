@@ -1,0 +1,14 @@
+
+
+channels:
+  - conda-forge
+
+dependencies:
+  # Define conda-forge packages here -> https://anaconda.org/search
+  # When available, prefer the conda-forge packages over pip as installations are more efficient.
+  - python=3.9.13              # https://pyreadiness.org/3.9/ 
+  - pip=20.1               # https://pip.pypa.io/en/stable/news/
+  - pandas=1.4.3
+  - pip:
+      # Define pip packages here -> https://pypi.org/
+      - rpaframework==15.6.0    # https://rpaframework.org/releasenotes.html
