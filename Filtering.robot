@@ -13,7 +13,8 @@ Resource            SblCrawling.robot
 *** Keywords ***
 Filtering Data
 #-----------------Collecting the Testcases whose flag is YES to process---------------------#
-    ${File}   Set Variable   C:/Users/Q0041/Documents/Robots/RoboCorp/SBL_Easy_TestCase/Config/config.xlsx
+    ${configpath}    Data.current_diectory    
+    ${File}   Set Variable   ${configpath}/Config/config.xlsx
     Open Workbook       ${File}
     ${data}=  Read Worksheet As Table  Controller  header=${True}
     Close Workbook
